@@ -1,0 +1,172 @@
+/* ==================== Global Body & Header ==================== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(to right, #fff3e0, #ffe0b2);
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #8b0000;
+  color: white;
+  padding: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: cursive;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ==================== Section Titles ==================== */
+.section-title,
+.about h2,
+.profile h2 {
+  font-size: 28px;
+  font-family: cursive;
+  margin: 30px 0 20px;
+  color: #8b0000;
+  text-align: center;
+}
+
+/* ==================== About Section ==================== */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  background: linear-gradient(145deg, #fff3e0, #ffe0b2);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 18px;
+  border-left: 8px solid #8b0000; /* maroon accent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* ==================== Highlights Section ==================== */
+.profile {
+  max-width: 900px;
+  margin: 40px auto;
+  background: linear-gradient(145deg, #ffe0b2, #ffd699);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: left;
+  border-left: 8px solid #8b0000; /* maroon accent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* ==================== Highlights List ==================== */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ffd699; /* soft separator matching theme */
+  font-size: 17px;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.features .label {
+  font-weight: bold;
+  color: #8b0000; /* maroon labels */
+  flex: 0 0 150px; /* left label width */
+}
+
+/* ==================== Gallery ==================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.caption {
+  padding: 12px;
+  font-weight: bold;
+  background: #fafafa;
+}
+
+/* ==================== Videos ==================== */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.videos video {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ==================== Footer ==================== */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+  .features .label {
+    flex: 0 0 100%;
+    margin-bottom: 5px;
+  }
+  .features li {
+    flex-direction: column;
+  }
+}
